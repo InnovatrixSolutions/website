@@ -203,6 +203,26 @@ export default async function Home({
 
   return (
     <div className="min-h-screen bg-black text-white">
+        {/* AI animated background */}
+        <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
+          {/* orb 1 */}
+          {/* <div
+            className="absolute left-1/2 top-1/3 h-[620px] w-[620px] -translate-x-1/2 rounded-full
+                      bg-gradient-to-tr from-[#42A5F6]/55 via-[#7B61FF]/35 to-transparent blur-3xl
+                      animate-ai-orb-1"
+          /> */}
+          {/* orb 2 */}
+          {/* <div
+            className="absolute left-[25%] top-[55%] h-[460px] w-[460px] -translate-x-1/2 rounded-full
+                      bg-gradient-to-br from-[#42A5F6]/35 via-transparent to-transparent blur-3xl
+                      animate-ai-orb-2"
+          /> */}
+
+          {/* subtle grid/noise feel */}
+          {/* <div className="absolute inset-0 opacity-[0.06] mix-blend-overlay bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:24px_24px]" /> */}
+        </div>
+
+
       {/* Top gradient */}
       <div className="pointer-events-none fixed inset-x-0 top-0 h-64 bg-gradient-to-b from-black via-black to-transparent" />
 

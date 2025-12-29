@@ -38,3 +38,23 @@ body {
 ::selection {
   background: color-mix(in srgb, var(--color-accent) 30%, transparent);
 }
+
+/* @keyframes aiOrb1 {
+  0%   { transform: translate(-50%, 0) scale(1); filter: blur(60px); }
+  50%  { transform: translate(-47%, -18px) scale(1.06); filter: blur(72px); }
+  100% { transform: translate(-50%, 0) scale(1); filter: blur(60px); }
+}
+
+@keyframes aiOrb2 {
+  0%   { transform: translate(-50%, 0) scale(1); opacity: 0.55; }
+  50%  { transform: translate(-56%, -26px) scale(1.08); opacity: 0.85; }
+  100% { transform: translate(-50%, 0) scale(1); opacity: 0.55; }
+}
+
+.animate-ai-orb-1 { animation: aiOrb1 6s ease-in-out infinite; }
+.animate-ai-orb-2 { animation: aiOrb2 8s ease-in-out infinite; } */
+
+/* (Opcional) respeta "reduce motion" del sistema */
+/* @media (prefers-reduced-motion: reduce) {
+  .animate-ai-orb-1, .animate-ai-orb-2 { animation: none !important; }
+} */
