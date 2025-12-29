@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "capabilities": "Capacidades",
+    "process": "Proceso",
+    "contact": "Contacto",
+    "cta": "Hablemos"
+  },
+  "hero": {
+    "badge": "Construimos sistemas que escalan",
+    "titleA": "Creamos",
+    "titleB": "IA",
+    "titleC": "y",
+    "titleD": "automatización",
+    "titleE": "para que tu negocio avance.",
+    "subtitle": "Innovatrix entrega soluciones prácticas: automatización de procesos, asistentes con IA y plataformas modernas — con calidad de ingeniería desde el primer día.",
+    "whoTitle": "Para:",
+    "whoText": "equipos y empresas que necesitan tecnología confiable, ejecución rápida e impacto medible.",
+    "ctaPrimary": "Agendar llamada",
+    "ctaSecondary": "Ver servicios",
+    "microProof": "Entrega rápida • Arquitectura limpia • Enfoque en seguridad • Listo para producción",
+    "cardTitle": "Lo que podemos entregar",
+    "cardBadge": "Listo para producción",
+    "cardBullets": [
+      "Formularios / requerimientos → automatización → trazabilidad en DevOps",
+      "Asistentes con IA (RAG) sobre documentos y datos",
+      "APIs, tableros e integraciones entre herramientas"
+    ],
+    "stackLabel": "Stack de ejemplo",
+    "stack": "Next.js • FastAPI • Docker • CI/CD • Cloud"
+  },
+  "trust": [
+    { "title": "+10x", "desc": "Procesos más rápidos con automatización" },
+    { "title": "Seguro", "desc": "Buenas prácticas de seguridad e ingeniería" },
+    { "title": "Escalable", "desc": "Diseñado para producción y crecimiento" }
+  ],
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Amplio para crecer, enfocado para entregar. Elija un pilar — podemos iniciar con un piloto rápido.",
+    "items": [
+      {
+        "title": "Automatización e Integraciones",
+        "desc": "Flujos, bots e integraciones que eliminan trabajo manual y reducen errores.",
+        "examples": ["MS Forms → n8n → Azure DevOps", "Correo/WhatsApp → ticketing", "Aprobaciones, alertas y reportes"]
+      },
+      {
+        "title": "Soluciones de IA",
+        "desc": "IA práctica para buscar, decidir y actuar — de forma segura y confiable.",
+        "examples": ["Asistentes RAG sobre documentos", "Extracción y entendimiento de documentos", "Modelos de predicción / clasificación"]
+      },
+      {
+        "title": "Ingeniería de Software",
+        "desc": "Plataformas web y APIs modernas con arquitectura sólida y mantenible.",
+        "examples": ["Aplicaciones web y dashboards", "APIs y microservicios", "Autenticación, roles y modelos de datos"]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "desc": "Despliegues confiables y automatización para entregar más rápido con confianza.",
+        "examples": ["Docker + ambientes", "Pipelines CI/CD", "Monitoreo y logging básico"]
+      },
+      {
+        "title": "Datos y Analítica",
+        "desc": "De datos crudos a métricas útiles — la base para automatización e IA.",
+        "examples": ["ETL / integraciones", "KPIs y reportes", "Validación de calidad de datos"]
+      },
+      {
+        "title": "Consultoría y Acompañamiento",
+        "desc": "Hojas de ruta, auditorías y revisión de arquitectura para reducir riesgo.",
+        "examples": ["Revisión de arquitectura", "Checklist seguridad por diseño", "Roadmap de implementación"]
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Capacidades",
+    "subtitle": "Podemos cubrir todo el stack, pero siempre entregamos con alcance claro y resultados medibles.",
+    "points": [
+      { "title": "Pilotos rápidos", "desc": "Probar valor en días y luego escalar con confianza." },
+      { "title": "Calidad de ingeniería", "desc": "Código mantenible, arquitectura limpia y documentación clara." },
+      { "title": "Enfoque en seguridad", "desc": "Control de acceso, manejo de secretos e integraciones seguras." }
+    ],
+    "panelTitle": "Toolkit típico",
+    "tags": ["Next.js", "FastAPI", "Docker", "PostgreSQL", "MongoDB", "CI/CD", "Azure DevOps", "n8n", "AWS / Cloud", "Auth & RBAC"],
+    "noteLabel": "Buen encaje si",
+    "noteText": "busca automatización + IA + software como un sistema coherente."
+  },
+  "process": {
+    "title": "Cómo trabajamos",
+    "subtitle": "Un proceso simple que reduce riesgos y mantiene la entrega rápida.",
+    "steps": [
+      { "title": "Descubrimiento", "desc": "Objetivos, restricciones, herramientas actuales y métricas de éxito." },
+      { "title": "Piloto", "desc": "Construcción rápida para demostrar valor con usuarios reales." },
+      { "title": "Producción", "desc": "Endurecimiento: seguridad, monitoreo, documentación, CI/CD." },
+      { "title": "Escalar", "desc": "Expandir a más flujos, equipos y funcionalidades." }
+    ]
+  },
+  "industries": {
+    "title": "Industrias y casos de uso",
+    "subtitle": "Innovatrix se adapta a su dominio manteniendo estándares de ingeniería.",
+    "items": [
+      "Sector público y flujos gubernamentales",
+      "E-commerce y automatización operativa",
+      "Modernización de soporte y ticketing",
+      "Herramientas internas y tableros",
+      "Procesos con muchos documentos (PDF, formularios, correos)",
+      "Pipelines de datos para reporting y ML"
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Solo trabajan IA?", "a": "No. Entregamos sistemas end-to-end: automatización, software, datos e IA — lo que genere más valor." },
+      { "q": "¿Podemos empezar pequeño?", "a": "Sí. Normalmente iniciamos con un piloto (1–2 semanas) para probar ROI antes de escalar." },
+      { "q": "¿Soportan despliegues en nube?", "a": "Sí. Podemos desplegar en Vercel, VPS o cloud con CI/CD y observabilidad básica." },
+      { "q": "¿Cómo manejan seguridad?", "a": "Seguimos desarrollo con enfoque en seguridad: mínimo privilegio, secretos, RBAC e integraciones seguras." }
+    ]
+  },
+  "contact": {
+    "title": "Construyamos algo útil.",
+    "subtitle": "Cuéntenos qué quiere mejorar — propondremos un piloto con alcance y entregables claros.",
+    "bullets": ["Plan claro en 1–2 días", "Propuesta de piloto con alcance y cronograma", "Comunicación bilingüe (EN/ES)"],
+    "ctaEmail": "Escríbanos",
+    "ctaServices": "Ver servicios"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "privacy": "Privacidad"
+  }
+}

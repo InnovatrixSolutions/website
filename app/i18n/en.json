@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "services": "Services",
+    "capabilities": "Capabilities",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Let’s talk"
+  },
+  "hero": {
+    "badge": "Building systems that scale",
+    "titleA": "We build",
+    "titleB": "AI",
+    "titleC": "and",
+    "titleD": "automation",
+    "titleE": "that make your business move.",
+    "subtitle": "Innovatrix delivers practical solutions: workflow automation, AI assistants, and modern software platforms — with engineering quality from day one.",
+    "whoTitle": "For:",
+    "whoText": "teams and businesses that need reliable tech, fast execution, and measurable impact.",
+    "ctaPrimary": "Book a call",
+    "ctaSecondary": "Explore services",
+    "microProof": "Fast delivery • Clean architecture • Security-minded • Production-ready",
+    "cardTitle": "What we can deliver",
+    "cardBadge": "Production-ready",
+    "cardBullets": [
+      "Forms / requests → workflow automation → DevOps tracking",
+      "AI assistants with RAG over your documents and data",
+      "APIs, dashboards, and integrations across your tools"
+    ],
+    "stackLabel": "Example stack",
+    "stack": "Next.js • FastAPI • Docker • CI/CD • Cloud"
+  },
+  "trust": [
+    { "title": "+10x", "desc": "Faster processes with automation" },
+    { "title": "Secure", "desc": "Security-first engineering practices" },
+    { "title": "Scalable", "desc": "Built for production and growth" }
+  ],
+  "services": {
+    "title": "Services",
+    "subtitle": "Broad enough to grow, focused enough to deliver. Choose a pillar — we can start with a quick pilot.",
+    "items": [
+      {
+        "title": "Automation & Integrations",
+        "desc": "Workflows, bots, and tool integrations that eliminate manual work and reduce errors.",
+        "examples": ["MS Forms → n8n → Azure DevOps", "Email/WhatsApp intake → ticketing", "Approvals, alerts, and reporting"]
+      },
+      {
+        "title": "AI Solutions",
+        "desc": "Practical AI that helps teams search, decide, and act — safely and reliably.",
+        "examples": ["RAG assistants over documents", "Document intelligence & extraction", "Prediction / classification models"]
+      },
+      {
+        "title": "Software Engineering",
+        "desc": "Modern web platforms and APIs built with strong architecture and maintainability.",
+        "examples": ["Web apps & dashboards", "APIs & microservices", "Auth, roles, and data models"]
+      },
+      {
+        "title": "Cloud & DevOps",
+        "desc": "Reliable deployments and automation for shipping faster with confidence.",
+        "examples": ["Docker + environments", "CI/CD pipelines", "Monitoring & logging basics"]
+      },
+      {
+        "title": "Data & Analytics",
+        "desc": "From raw data to useful metrics — the foundation for automation and AI.",
+        "examples": ["ETL / integrations", "KPIs & reporting", "Data quality checks"]
+      },
+      {
+        "title": "Advisory & Consulting",
+        "desc": "Roadmaps, audits, and architecture reviews to guide decisions and reduce risk.",
+        "examples": ["Architecture review", "Security-by-design checklist", "Implementation roadmap"]
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Capabilities",
+    "subtitle": "We can cover the full tech stack, but we always deliver with a clear scope and measurable outcomes.",
+    "points": [
+      { "title": "Fast pilots", "desc": "Prove value in days, then scale with confidence." },
+      { "title": "Engineering quality", "desc": "Maintainable code, clean architecture, and clear documentation." },
+      { "title": "Security-minded", "desc": "Access control, secrets handling, and safe integration patterns." }
+    ],
+    "panelTitle": "Typical toolkit",
+    "tags": ["Next.js", "FastAPI", "Docker", "PostgreSQL", "MongoDB", "CI/CD", "Azure DevOps", "n8n", "AWS / Cloud", "Auth & RBAC"],
+    "noteLabel": "Good fit when",
+    "noteText": "you want automation + AI + software delivered as a single coherent system."
+  },
+  "process": {
+    "title": "How we work",
+    "subtitle": "A simple process that reduces risk and keeps delivery fast.",
+    "steps": [
+      { "title": "Discovery", "desc": "Goals, constraints, current tools, and success metrics." },
+      { "title": "Pilot", "desc": "Quick build to prove value with real users." },
+      { "title": "Production", "desc": "Hardening: security, monitoring, documentation, CI/CD." },
+      { "title": "Scale", "desc": "Expand to more workflows, teams, and features." }
+    ]
+  },
+  "industries": {
+    "title": "Industries & use cases",
+    "subtitle": "Innovatrix adapts to your domain while keeping engineering standards.",
+    "items": [
+      "Government & public sector workflows",
+      "E-commerce & operations automation",
+      "Customer support & ticketing modernization",
+      "Internal tools & dashboards",
+      "Document-heavy processes (PDFs, forms, emails)",
+      "Data pipelines for reporting & ML"
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      { "q": "Do you only work on AI?", "a": "No. We deliver end-to-end systems: automation, software, data, and AI — whichever creates the most value." },
+      { "q": "Can we start small?", "a": "Yes. We often start with a pilot (1–2 weeks) to prove ROI before scaling." },
+      { "q": "Do you support cloud deployments?", "a": "Yes. We can deploy on Vercel, VPS, or cloud providers with CI/CD and basic observability." },
+      { "q": "How do you handle security?", "a": "We follow security-minded development: least privilege, secrets management, RBAC, and secure integrations." }
+    ]
+  },
+  "contact": {
+    "title": "Let’s build something useful.",
+    "subtitle": "Tell us what you want to improve — we’ll propose a pilot with clear scope and deliverables.",
+    "bullets": ["A clear plan in 1–2 days", "Pilot proposal with scope & timeline", "Bilingual communication (EN/ES)"],
+    "ctaEmail": "Email us",
+    "ctaServices": "See services"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "privacy": "Privacy"
+  }
+}
