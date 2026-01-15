@@ -243,7 +243,7 @@ export default async function Home({
             </span>
           </a>
 
-          <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
+          <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
             <a className="hover:text-white" href={`/${locale}#services`}>
               {t.nav.services}
             </a>
@@ -252,6 +252,15 @@ export default async function Home({
             </a>
             <a className="hover:text-white" href={`/${locale}#contact`}>
               {t.nav.contact}
+            </a>
+            <a className="hover:text-white" href={`/${locale}/catalogo`}>
+              Catálogo
+            </a>
+            <a className="hover:text-white" href={`/${locale}/sobre-nosotros`}>
+              Sobre nosotros
+            </a>
+            <a className="hover:text-white" href={`/${locale}/politicas`}>
+              Políticas
             </a>
           </nav>
 

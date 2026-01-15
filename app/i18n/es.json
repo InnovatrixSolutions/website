@@ -127,4 +127,45 @@
     "github": "GitHub",
     "privacy": "Privacidad"
   }
+  ,
+  "catalog": {
+    "title": "Catálogo de servicios y productos",
+    "subtitle": "Asistencia segura y profesional para suscripciones, configuraciones y productos digitales.",
+    "howTitle": "Cómo funciona",
+    "howSteps": [
+      "Elige: selecciona el servicio o producto que necesitas.",
+      "Paga: coordinamos el pago por WhatsApp y confirmamos los detalles.",
+      "Configuración: configuramos el servicio respetando que tú seas el propietario de la cuenta.",
+      "Soporte: ayuda inicial y recomendaciones de uso."
+    ],
+    "faq": [
+      { "q": "¿Ustedes venden cuentas compartidas?", "a": "No. Ofrecemos asistencia y servicios de configuración. No vendemos ni transferimos cuentas compartidas." },
+      { "q": "¿Solicitan mi contraseña?", "a": "Nunca solicitamos tu contraseña. Si se requiere acceso temporal para soporte remoto pedimos consentimiento explícito y opciones seguras." },
+      { "q": "¿Quién es el propietario de la cuenta?", "a": "La cuenta quedará a tu nombre o bajo tu correo; tú eres el propietario en todo momento." },
+      { "q": "¿Los precios pueden cambiar?", "a": "Los precios son aproximados y pueden variar por cambios en las plataformas. Confirmamos el precio final antes de procesar." }
+    ]
+  },
+  "product": {
+    "notFoundTitle": "Producto no encontrado",
+    "notFoundDesc": "Revisa el catálogo o contáctanos por WhatsApp.",
+    "priceLabel": "Precio",
+    "includesTitle": "Qué incluye",
+    "deliveryTitle": "Tiempo de entrega",
+    "faqNote": "No vendemos cuentas compartidas. Si se requiere acceso temporal para soporte remoto, lo coordinamos con consentimiento explícito. El cliente es siempre el propietario de su cuenta."
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "missionTitle": "Misión",
+    "missionText": "Ayudamos a las personas y negocios a acceder a herramientas digitales de forma segura y responsable. Ofrecemos asistencia, configuración y capacitación para que tú seas el propietario de tus cuentas.",
+    "storyTitle": "Nuestra historia",
+    "storyText": "Somos el amigo IT, ahora profesionalizado: entregamos soluciones prácticas y fáciles de entender. Nuestra operación está diseñada para ser manejada por un equipo pequeño y confiable vía WhatsApp.",
+    "trustTitle": "Confianza",
+    "badges": ["Protegemos tus datos", "Pago seguro (por WhatsApp)", "Soporte local (Colombia)"]
+  },
+  "policies": {
+    "title": "Políticas",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "refunds": "Política de reembolsos"
+  }
 }

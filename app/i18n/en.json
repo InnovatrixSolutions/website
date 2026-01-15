@@ -127,4 +127,45 @@
     "github": "GitHub",
     "privacy": "Privacy"
   }
+  ,
+  "catalog": {
+    "title": "Catalog of services & products",
+    "subtitle": "Secure, professional assistance for subscriptions, setup and digital products.",
+    "howTitle": "How it works",
+    "howSteps": [
+      "Choose: select the service or product you need.",
+      "Pay: we coordinate payment via WhatsApp and confirm details.",
+      "Setup: we configure the service while you remain the owner of the account.",
+      "Support: initial help and usage recommendations."
+    ],
+    "faq": [
+      { "q": "Do you sell shared accounts?", "a": "No. We provide assistance and setup services. We do not sell or transfer shared accounts." },
+      { "q": "Do you ask for my password?", "a": "We never ask for your password. If temporary access is needed for remote support we ask explicit consent and use secure options." },
+      { "q": "Who owns the account?", "a": "The account will be under your name or email; you remain the owner at all times." },
+      { "q": "Can prices change?", "a": "Prices are approximate and may change due to platform updates. We confirm final price before processing." }
+    ]
+  },
+  "product": {
+    "notFoundTitle": "Product not found",
+    "notFoundDesc": "Check the catalog or contact us on WhatsApp.",
+    "priceLabel": "Price",
+    "includesTitle": "What’s included",
+    "deliveryTitle": "Delivery time",
+    "faqNote": "We do not sell shared accounts. If temporary access is required for support, we coordinate with explicit consent. The customer remains the owner of the account."
+  },
+  "about": {
+    "title": "About us",
+    "missionTitle": "Mission",
+    "missionText": "We help people and businesses access digital tools safely and responsibly. We provide assistance, setup and training so you remain the account owner.",
+    "storyTitle": "Our story",
+    "storyText": "We are the IT friend, now professionalized: practical solutions and easy explanations. Our operation is designed to be run by a small, trusted team via WhatsApp.",
+    "trustTitle": "Trust",
+    "badges": ["We protect your data", "Secure payments (via WhatsApp)", "Local support (Colombia)"]
+  },
+  "policies": {
+    "title": "Policies",
+    "terms": "Terms & conditions",
+    "privacy": "Privacy policy",
+    "refunds": "Refund policy"
+  }
 }

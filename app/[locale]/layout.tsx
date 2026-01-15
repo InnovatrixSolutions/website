@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import WhatsAppFab from "../components/WhatsAppFab";
 
 export const metadata: Metadata = {
   title: "Innovatrix — AI, Automation & Software Engineering",
@@ -22,7 +23,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        {/* Sticky WhatsApp button visible on all pages */}
+        <WhatsAppFab />
+      </body>
     </html>
   );
 }
