@@ -1,42 +1,45 @@
 "use client";
 
+import React from "react";
 import { usePathname } from "next/navigation";
 
-export default function LocaleSwitcher({
-  locale,
-}: {
-  locale: "en" | "es";
-}) {
-  const pathname = usePathname();
+export default function LocaleSwitcher({ currentLocale }: { currentLocale: string }) {
+  const pathname = usePathname() || "/";
+  const segments = pathname.split("/").filter(Boolean);
+  const first = segments[0];
+  const rest = segments.slice(1).join("/");
 
-  function toLocale(nextLocale: "en" | "es") {
-    const parts = pathname.split("/");
-    // pathname starts with /{locale}/...
-    if (parts.length > 1) parts[1] = nextLocale;
-    return parts.join("/") || `/${nextLocale}`;
-  }
+  const buildHref = (loc: string) => {
+    if (first === "en" || first === "es") {
+      return "/" + loc + (rest ? "/" + rest : "");
+    }
+    return "/" + loc + (pathname === "/" ? "" : pathname);
+  };
 
-  const enHref = toLocale("en");
-  const esHref = toLocale("es");
-
-  const pill =
-    "rounded-full px-3 py-2 text-xs border hover:bg-[color-mix(in_srgb,var(--color-accent)_10%,transparent)] transition-colors";
+  const enHref = buildHref("en");
+  const esHref = buildHref("es");
 
   return (
     <div className="flex items-center gap-2">
       <a
         href={enHref}
-        className={`${pill}`}
-        style={{ borderColor: "var(--color-border)" }}
-        aria-current={locale === "en" ? "page" : undefined}
+        className={
+          currentLocale === "en"
+            ? "rounded-full border px-3 py-1 text-xs bg-white/10 border-white/30 text-white"
+            : "rounded-full border px-3 py-1 text-xs border-white/20 text-white/70 hover:text-white"
+        }
+        aria-current={currentLocale === "en" ? "page" : undefined}
       >
         EN
       </a>
       <a
         href={esHref}
-        className={`${pill}`}
-        style={{ borderColor: "var(--color-border)" }}
-        aria-current={locale === "es" ? "page" : undefined}
+        className={
+          currentLocale === "es"
+            ? "rounded-full border px-3 py-1 text-xs bg-white/10 border-white/30 text-white"
+            : "rounded-full border px-3 py-1 text-xs border-white/20 text-white/70 hover:text-white"
+        }
+        aria-current={currentLocale === "es" ? "page" : undefined}
       >
         ES
       </a>

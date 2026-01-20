@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  web:
+    image: node:20
+    working_dir: /app
+    volumes:
+      - ./:/app:delegated
+      - /app/node_modules
+    ports:
+      - '3000:3000'
+    environment:
+      - NEXT_PUBLIC_WHATSAPP=${NEXT_PUBLIC_WHATSAPP}
+      - NODE_ENV=development
+    command: sh -c "npm install --silent && npm run dev"
+    tty: true
+    stdin_open: true

@@ -1,0 +1,9 @@
+.next
+node_modules
+dist
+.env*
+.git
+.github
+.DS_Store
+npm-debug.log
+docker-compose.override.yml

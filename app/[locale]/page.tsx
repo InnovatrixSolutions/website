@@ -6,7 +6,7 @@ type Locale = "en" | "es";
 const copy: Record<
   Locale,
   {
-    nav: { services: string; why: string; contact: string };
+    nav: { services: string; catalog: string; why: string; contact: string };
     hero: {
       pill: string;
       titleA: string;
@@ -19,6 +19,7 @@ const copy: Record<
     services: {
       title: string;
       items: Array<{ title: string; desc: string }>;
+      cta: string;
     };
     why: {
       title: string;
@@ -35,7 +36,7 @@ const copy: Record<
   }
 > = {
   en: {
-    nav: { services: "Services", why: "Why Innovatrix", contact: "Contact" },
+    nav: { services: "Service Catalog", catalog: "Product Catalog", why: "Why Innovatrix", contact: "Contact" },
     hero: {
       pill: "Building systems that scale",
       titleA: "We build ",
@@ -48,31 +49,28 @@ const copy: Record<
     },
     services: {
       title: "Services",
+      cta: "Consult",
       items: [
-        {
-          title: "AI Assistants & Agents",
-          desc: "Customer support bots, internal copilots, RAG search, and agentic workflows connected to your tools.",
-        },
-        {
-          title: "Workflow Automation",
-          desc: "Automate processes across forms, email, CRMs, spreadsheets, and DevOps tooling (n8n, APIs, webhooks).",
-        },
-        {
-          title: "Software & Web Platforms",
-          desc: "Fast, modern web apps with Next.js/React/Vue, clean UX, analytics, and scalable backends.",
-        },
-        {
-          title: "Data & Integrations",
-          desc: "APIs, ETL pipelines, reporting, dashboards, and reliable system-to-system integrations.",
-        },
-        {
-          title: "Cloud & DevOps",
-          desc: "Docker, CI/CD, monitoring, deployments (Vercel, AWS, DigitalOcean), security-first practices.",
-        },
-        {
-          title: "Consulting & Architecture",
-          desc: "Technical leadership, roadmaps, audits, performance fixes, and best-practice engineering guidance.",
-        },
+        { title: "AI Assistants & Agents", desc: "Customer support bots, internal copilots, RAG search, and agentic workflows connected to your tools." },
+        { title: "Workflow Automation", desc: "Automate processes across forms, email, CRMs, spreadsheets, and DevOps tooling (n8n, APIs, webhooks)." },
+        { title: "Software & Web Platforms", desc: "Fast, modern web apps with Next.js/React/Vue, clean UX, analytics, and scalable backends." },
+        { title: "Data & Integrations", desc: "APIs, ETL pipelines, reporting, dashboards, and reliable system-to-system integrations." },
+        { title: "Cloud & DevOps", desc: "Docker, CI/CD, monitoring, deployments (Vercel, AWS, DigitalOcean), security-first practices." },
+        { title: "Consulting & Architecture", desc: "Technical leadership, roadmaps, audits, performance fixes, and best-practice engineering guidance." },
+        { title: "E-commerce Platforms", desc: "Headless or full-stack e-commerce with inventory, catalogs, and checkout integrations." },
+        { title: "Mobile Apps", desc: "Cross-platform mobile experiences with React Native, Expo, or native tooling." },
+        { title: "UX / UI Design", desc: "Research-driven interfaces, design systems, and high-conversion product UX." },
+        { title: "API Development", desc: "Robust REST/GraphQL APIs, authentication, versioning, and SDKs." },
+        { title: "Observability & Monitoring", desc: "Logging, metrics, tracing, alerts, and dashboards for production reliability." },
+        { title: "Performance Optimization", desc: "Frontend and backend profiling, caching, and critical-path improvements." },
+        { title: "Security & Compliance", desc: "Threat modeling, audits, secure coding, and compliance readiness (GDPR, etc.)." },
+        { title: "Migration & Modernization", desc: "Lift-and-shift or re-architecture to modern stacks and cloud-native patterns." },
+        { title: "MLOps & Model Deployment", desc: "Model training pipelines, deployment, monitoring, and retraining workflows." },
+        { title: "Conversational Sales Chatbots", desc: "Bots for lead capture, qualification, and handoff to sales teams." },
+        { title: "Payments & Gateways", desc: "Integrations with Stripe, PayU, MercadoPago and reconciliation flows." },
+        { title: "Headless CMS & Content", desc: "Content APIs, previews, and workflows for marketing and editorial teams." },
+        { title: "Real-time Systems", desc: "WebSockets, push updates, notifications, and collaborative features." },
+        { title: "SaaS Product Engineering", desc: "Productization, subscription billing, multi-tenant design, and onboarding flows." },
       ],
     },
     why: {
@@ -111,7 +109,7 @@ const copy: Record<
     footer: { rights: "All rights reserved." },
   },
   es: {
-    nav: { services: "Servicios", why: "Por qué Innovatrix", contact: "Contacto" },
+    nav: { services: "Catálogo de Servicios", catalog: "Catálogo de Productos", why: "Por qué Innovatrix", contact: "Contacto" },
     hero: {
       pill: "Construimos sistemas que escalan",
       titleA: "Creamos ",
@@ -124,31 +122,28 @@ const copy: Record<
     },
     services: {
       title: "Servicios",
+      cta: "Consultar",
       items: [
-        {
-          title: "Asistentes y agentes de IA",
-          desc: "Bots de soporte, copilotos internos, búsqueda tipo RAG y flujos agenticos conectados a tus herramientas.",
-        },
-        {
-          title: "Automatización de procesos",
-          desc: "Automatiza procesos con formularios, email, CRMs, hojas de cálculo y herramientas DevOps (n8n, APIs, webhooks).",
-        },
-        {
-          title: "Software y plataformas web",
-          desc: "Apps web modernas con Next.js/React/Vue, UX limpio, analítica y backends escalables.",
-        },
-        {
-          title: "Datos e integraciones",
-          desc: "APIs, pipelines ETL, reporting, dashboards e integraciones confiables entre sistemas.",
-        },
-        {
-          title: "Cloud y DevOps",
-          desc: "Docker, CI/CD, monitoreo, despliegues (Vercel, AWS, DigitalOcean) y buenas prácticas de seguridad.",
-        },
-        {
-          title: "Consultoría y arquitectura",
-          desc: "Liderazgo técnico, roadmaps, auditorías, optimización y guía de buenas prácticas.",
-        },
+        { title: "Asistentes y agentes de IA", desc: "Bots de soporte, copilotos internos, búsqueda tipo RAG y flujos agenticos conectados a tus herramientas." },
+        { title: "Automatización de procesos", desc: "Automatiza procesos con formularios, email, CRMs, hojas de cálculo y herramientas DevOps (n8n, APIs, webhooks)." },
+        { title: "Software y plataformas web", desc: "Apps web modernas con Next.js/React/Vue, UX limpio, analítica y backends escalables." },
+        { title: "Datos e integraciones", desc: "APIs, pipelines ETL, reporting, dashboards e integraciones confiables entre sistemas." },
+        { title: "Cloud y DevOps", desc: "Docker, CI/CD, monitoreo, despliegues (Vercel, AWS, DigitalOcean) y buenas prácticas de seguridad." },
+        { title: "Consultoría y arquitectura", desc: "Liderazgo técnico, roadmaps, auditorías, optimización y guía de buenas prácticas." },
+        { title: "Plataformas de comercio electrónico", desc: "E-commerce headless o monolítico con inventario, catálogos y flujos de pago." },
+        { title: "Apps móviles", desc: "Experiencias móviles multiplataforma con React Native, Expo o herramientas nativas." },
+        { title: "Diseño UX / UI", desc: "Interfaces basadas en investigación, sistemas de diseño y UX orientado a conversión." },
+        { title: "Desarrollo de APIs", desc: "APIs REST/GraphQL robustas, autenticación, versionado y SDKs." },
+        { title: "Observabilidad y monitoreo", desc: "Logging, métricas, tracing, alertas y dashboards para producción." },
+        { title: "Optimización de rendimiento", desc: "Perfilado frontend/backend, caching y mejoras del path crítico." },
+        { title: "Seguridad y cumplimiento", desc: "Threat modeling, auditorías, codificación segura y preparación para cumplimiento (GDPR)." },
+        { title: "Migración y modernización", desc: "Re-arquitectura o migración a stacks modernos y patrones cloud-native." },
+        { title: "MLOps y despliegue de modelos", desc: "Pipelines de entrenamiento, despliegue de modelos, monitorización y retraining." },
+        { title: "Chatbots conversacionales de ventas", desc: "Bots para captura de leads, cualificación y traspaso al equipo de ventas." },
+        { title: "Pagos e integraciones", desc: "Integraciones con Stripe, PayU, MercadoPago y flujos de conciliación." },
+        { title: "Headless CMS y contenido", desc: "APIs de contenido, previews y workflows para marketing y editorial." },
+        { title: "Sistemas en tiempo real", desc: "WebSockets, pushes, notificaciones y features colaborativas." },
+        { title: "Ingeniería de productos SaaS", desc: "Productización, billing por suscripción, multi-tenant y onboarding." },
       ],
     },
     why: {
@@ -203,24 +198,24 @@ export default async function Home({
 
   return (
     <div className="min-h-screen bg-black text-white">
-        {/* AI animated background */}
-        <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
-          {/* orb 1 */}
-          {/* <div
+      {/* AI animated background */}
+      <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
+        {/* orb 1 */}
+        {/* <div
             className="absolute left-1/2 top-1/3 h-[620px] w-[620px] -translate-x-1/2 rounded-full
                       bg-gradient-to-tr from-[#42A5F6]/55 via-[#7B61FF]/35 to-transparent blur-3xl
                       animate-ai-orb-1"
           /> */}
-          {/* orb 2 */}
-          {/* <div
+        {/* orb 2 */}
+        {/* <div
             className="absolute left-[25%] top-[55%] h-[460px] w-[460px] -translate-x-1/2 rounded-full
                       bg-gradient-to-br from-[#42A5F6]/35 via-transparent to-transparent blur-3xl
                       animate-ai-orb-2"
           /> */}
 
-          {/* subtle grid/noise feel */}
-          {/* <div className="absolute inset-0 opacity-[0.06] mix-blend-overlay bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:24px_24px]" /> */}
-        </div>
+        {/* subtle grid/noise feel */}
+        {/* <div className="absolute inset-0 opacity-[0.06] mix-blend-overlay bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:24px_24px]" /> */}
+      </div>
 
 
       {/* Top gradient */}
@@ -243,18 +238,15 @@ export default async function Home({
             </span>
           </a>
 
-          <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
+          <nav className="flex items-center gap-6 text-sm text-white/70 flex-wrap">
             <a className="hover:text-white" href={`/${locale}#services`}>
               {t.nav.services}
             </a>
+            <a className="hover:text-white" href={`/${locale}/catalogo`}>
+              {t.nav.catalog}
+            </a>
             <a className="hover:text-white" href={`/${locale}#why`}>
               {t.nav.why}
-            </a>
-            <a className="hover:text-white" href={`/${locale}#contact`}>
-              {t.nav.contact}
-            </a>
-            <a className="hover:text-white" href={`/${locale}/catalogo`}>
-              Catálogo
             </a>
             <a className="hover:text-white" href={`/${locale}/sobre-nosotros`}>
               Sobre nosotros
@@ -348,15 +340,34 @@ export default async function Home({
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {t.services.items.map((s) => (
-              <div
-                key={s.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-              >
-                <h3 className="text-base font-semibold">{s.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-white/70">{s.desc}</p>
-              </div>
-            ))}
+            {t.services.items.map((s) => {
+              const wa = `https://wa.me/573124305560?text=${encodeURIComponent(
+                locale === "es"
+                  ? `Hola, me interesa el servicio de: ${s.title}`
+                  : `Hello, I'm interested in the service: ${s.title}`
+              )}`;
+              return (
+                <div
+                  key={s.title}
+                  className="group flex flex-col justify-between rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+                >
+                  <div>
+                    <h3 className="text-base font-semibold">{s.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-white/70">{s.desc}</p>
+                  </div>
+                  <div className="mt-4">
+                    <a
+                      href={wa}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-[#42A5F6] hover:text-[#7B61FF]"
+                    >
+                      {t.services.cta} →
+                    </a>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </section>
 
@@ -414,62 +425,62 @@ export default async function Home({
           </div>
         </section>
 
-<footer className="border-t border-white/10 py-10 text-sm text-white/50">
-  <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-    
-    {/* Left */}
-    <div className="flex flex-col gap-2">
-      <span>
-        © {new Date().getFullYear()} Innovatrix. {t.footer.rights}
-      </span>
-      <span className="text-white/40">AI • Automation • Software</span>
-    </div>
+        <footer className="border-t border-white/10 py-10 text-sm text-white/50">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
 
-    {/* Right: Social & Contact */}
-    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
-      
-      {/* Instagram */}
-      <a
-        href="https://instagram.com/innovatrix_hub"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-white/60 transition hover:text-white"
-      >
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-        </svg>
-        <span>@innovatrix_hub</span>
-      </a>
+            {/* Left */}
+            <div className="flex flex-col gap-2">
+              <span>
+                © {new Date().getFullYear()} Innovatrix. {t.footer.rights}
+              </span>
+              <span className="text-white/40">AI • Automation • Software</span>
+            </div>
 
-      {/* WhatsApp / Phone */}
-      <a
-        href="https://wa.me/+573124305560"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-white/60 transition hover:text-white"
-      >
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+            {/* Right: Social & Contact */}
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/innovatrix_hub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 transition hover:text-white"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+                <span>@innovatrix.technology</span>
+              </a>
+
+              {/* WhatsApp / Phone */}
+              <a
+                href="https://wa.me/+573124305560"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 transition hover:text-white"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2
                    19.79 19.79 0 0 1-8.63-3.07
                    19.5 19.5 0 0 1-6-6
                    19.79 19.79 0 0 1-3.07-8.67
@@ -481,14 +492,14 @@ export default async function Home({
                    a2 2 0 0 1 2.11-.45
                    12.84 12.84 0 0 0 2.81.7
                    A2 2 0 0 1 22 16.92z"
-          />
-        </svg>
-        <span>+57 (312) 430 5560</span>
-      </a>
+                  />
+                </svg>
+                <span>+57 (312) 430 5560</span>
+              </a>
 
-    </div>
-  </div>
-</footer>
+            </div>
+          </div>
+        </footer>
 
       </main>
     </div>

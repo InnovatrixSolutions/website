@@ -4,17 +4,24 @@ import React from "react";
 import type { Product } from "@/data/catalog";
 import { generateWhatsAppLink, formatCOP } from "@/lib/generateWhatsAppLink";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product, t }: { product: Product; t?: any }) {
   const wa = generateWhatsAppLink({
     name: product.name,
     priceCOP: product.priceCOP,
     slug: product.slug,
   });
 
+  const cta = (t && (t.ctaWhatsApp || t.catalog?.ctaWhatsApp)) || "Request via WhatsApp";
+
+  console.log(`[ProductCard] slug: ${product.slug}, t.title:`, t?.catalog?.title);
+
+  const displayName = (t && t.products && t.products[product.slug]?.name) || product.name;
+  const displayShort = (t && t.products && t.products[product.slug]?.shortDescription) || product.shortDescription;
+
   return (
     <article className="rounded-2xl border border-white/8 bg-white/3 p-4">
-      <h3 className="text-base font-semibold">{product.name}</h3>
-      <p className="mt-2 text-sm text-white/70">{product.shortDescription}</p>
+      <h3 className="text-base font-semibold">{displayName}</h3>
+      <p className="mt-2 text-sm text-white/70">{displayShort}</p>
 
       <div className="mt-4 flex items-center justify-between">
         <div>
@@ -28,7 +35,7 @@ export default function ProductCard({ product }: { product: Product }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Solicitar por WhatsApp
+          {cta}
         </a>
       </div>
     </article>

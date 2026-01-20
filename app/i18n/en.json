@@ -1,6 +1,6 @@
 {
   "nav": {
-    "services": "Services",
+    "services": "Service Catalog",
     "capabilities": "Capabilities",
     "process": "Process",
     "contact": "Contact",
@@ -30,9 +30,18 @@
     "stack": "Next.js • FastAPI • Docker • CI/CD • Cloud"
   },
   "trust": [
-    { "title": "+10x", "desc": "Faster processes with automation" },
-    { "title": "Secure", "desc": "Security-first engineering practices" },
-    { "title": "Scalable", "desc": "Built for production and growth" }
+    {
+      "title": "+10x",
+      "desc": "Faster processes with automation"
+    },
+    {
+      "title": "Secure",
+      "desc": "Security-first engineering practices"
+    },
+    {
+      "title": "Scalable",
+      "desc": "Built for production and growth"
+    }
   ],
   "services": {
     "title": "Services",
@@ -41,45 +50,90 @@
       {
         "title": "Automation & Integrations",
         "desc": "Workflows, bots, and tool integrations that eliminate manual work and reduce errors.",
-        "examples": ["MS Forms → n8n → Azure DevOps", "Email/WhatsApp intake → ticketing", "Approvals, alerts, and reporting"]
+        "examples": [
+          "MS Forms → n8n → Azure DevOps",
+          "Email/WhatsApp intake → ticketing",
+          "Approvals, alerts, and reporting"
+        ]
       },
       {
         "title": "AI Solutions",
         "desc": "Practical AI that helps teams search, decide, and act — safely and reliably.",
-        "examples": ["RAG assistants over documents", "Document intelligence & extraction", "Prediction / classification models"]
+        "examples": [
+          "RAG assistants over documents",
+          "Document intelligence & extraction",
+          "Prediction / classification models"
+        ]
       },
       {
         "title": "Software Engineering",
         "desc": "Modern web platforms and APIs built with strong architecture and maintainability.",
-        "examples": ["Web apps & dashboards", "APIs & microservices", "Auth, roles, and data models"]
+        "examples": [
+          "Web apps & dashboards",
+          "APIs & microservices",
+          "Auth, roles, and data models"
+        ]
       },
       {
         "title": "Cloud & DevOps",
         "desc": "Reliable deployments and automation for shipping faster with confidence.",
-        "examples": ["Docker + environments", "CI/CD pipelines", "Monitoring & logging basics"]
+        "examples": [
+          "Docker + environments",
+          "CI/CD pipelines",
+          "Monitoring & logging basics"
+        ]
       },
       {
         "title": "Data & Analytics",
         "desc": "From raw data to useful metrics — the foundation for automation and AI.",
-        "examples": ["ETL / integrations", "KPIs & reporting", "Data quality checks"]
+        "examples": [
+          "ETL / integrations",
+          "KPIs & reporting",
+          "Data quality checks"
+        ]
       },
       {
         "title": "Advisory & Consulting",
         "desc": "Roadmaps, audits, and architecture reviews to guide decisions and reduce risk.",
-        "examples": ["Architecture review", "Security-by-design checklist", "Implementation roadmap"]
+        "examples": [
+          "Architecture review",
+          "Security-by-design checklist",
+          "Implementation roadmap"
+        ]
       }
-    ]
+    ],
+    "cta": "Consult"
   },
   "capabilities": {
     "title": "Capabilities",
     "subtitle": "We can cover the full tech stack, but we always deliver with a clear scope and measurable outcomes.",
     "points": [
-      { "title": "Fast pilots", "desc": "Prove value in days, then scale with confidence." },
-      { "title": "Engineering quality", "desc": "Maintainable code, clean architecture, and clear documentation." },
-      { "title": "Security-minded", "desc": "Access control, secrets handling, and safe integration patterns." }
+      {
+        "title": "Fast pilots",
+        "desc": "Prove value in days, then scale with confidence."
+      },
+      {
+        "title": "Engineering quality",
+        "desc": "Maintainable code, clean architecture, and clear documentation."
+      },
+      {
+        "title": "Security-minded",
+        "desc": "Access control, secrets handling, and safe integration patterns."
+      }
     ],
     "panelTitle": "Typical toolkit",
-    "tags": ["Next.js", "FastAPI", "Docker", "PostgreSQL", "MongoDB", "CI/CD", "Azure DevOps", "n8n", "AWS / Cloud", "Auth & RBAC"],
+    "tags": [
+      "Next.js",
+      "FastAPI",
+      "Docker",
+      "PostgreSQL",
+      "MongoDB",
+      "CI/CD",
+      "Azure DevOps",
+      "n8n",
+      "AWS / Cloud",
+      "Auth & RBAC"
+    ],
     "noteLabel": "Good fit when",
     "noteText": "you want automation + AI + software delivered as a single coherent system."
   },
@@ -87,10 +141,22 @@
     "title": "How we work",
     "subtitle": "A simple process that reduces risk and keeps delivery fast.",
     "steps": [
-      { "title": "Discovery", "desc": "Goals, constraints, current tools, and success metrics." },
-      { "title": "Pilot", "desc": "Quick build to prove value with real users." },
-      { "title": "Production", "desc": "Hardening: security, monitoring, documentation, CI/CD." },
-      { "title": "Scale", "desc": "Expand to more workflows, teams, and features." }
+      {
+        "title": "Discovery",
+        "desc": "Goals, constraints, current tools, and success metrics."
+      },
+      {
+        "title": "Pilot",
+        "desc": "Quick build to prove value with real users."
+      },
+      {
+        "title": "Production",
+        "desc": "Hardening: security, monitoring, documentation, CI/CD."
+      },
+      {
+        "title": "Scale",
+        "desc": "Expand to more workflows, teams, and features."
+      }
     ]
   },
   "industries": {
@@ -108,28 +174,50 @@
   "faq": {
     "title": "FAQ",
     "items": [
-      { "q": "Do you only work on AI?", "a": "No. We deliver end-to-end systems: automation, software, data, and AI — whichever creates the most value." },
-      { "q": "Can we start small?", "a": "Yes. We often start with a pilot (1–2 weeks) to prove ROI before scaling." },
-      { "q": "Do you support cloud deployments?", "a": "Yes. We can deploy on Vercel, VPS, or cloud providers with CI/CD and basic observability." },
-      { "q": "How do you handle security?", "a": "We follow security-minded development: least privilege, secrets management, RBAC, and secure integrations." }
+      {
+        "q": "Do you only work on AI?",
+        "a": "No. We deliver end-to-end systems: automation, software, data, and AI — whichever creates the most value."
+      },
+      {
+        "q": "Can we start small?",
+        "a": "Yes. We often start with a pilot (1–2 weeks) to prove ROI before scaling."
+      },
+      {
+        "q": "Do you support cloud deployments?",
+        "a": "Yes. We can deploy on Vercel, VPS, or cloud providers with CI/CD and basic observability."
+      },
+      {
+        "q": "How do you handle security?",
+        "a": "We follow security-minded development: least privilege, secrets management, RBAC, and secure integrations."
+      }
     ]
   },
   "contact": {
     "title": "Let’s build something useful.",
     "subtitle": "Tell us what you want to improve — we’ll propose a pilot with clear scope and deliverables.",
-    "bullets": ["A clear plan in 1–2 days", "Pilot proposal with scope & timeline", "Bilingual communication (EN/ES)"],
+    "bullets": [
+      "A clear plan in 1–2 days",
+      "Pilot proposal with scope & timeline",
+      "Bilingual communication (EN/ES)"
+    ],
     "ctaEmail": "Email us",
     "ctaServices": "See services"
   },
+  "categories": {
+    "all": "All",
+    "asistencia": "Subscription assistance",
+    "streaming": "Streaming products",
+    "productos": "Digital products / Services"
+  },
+  "ctaWhatsApp": "Request via WhatsApp",
   "footer": {
     "rights": "All rights reserved.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "privacy": "Privacy"
-  }
-  ,
+  },
   "catalog": {
-    "title": "Catalog of services & products",
+    "title": "Product Catalog",
     "subtitle": "Secure, professional assistance for subscriptions, setup and digital products.",
     "howTitle": "How it works",
     "howSteps": [
@@ -139,10 +227,22 @@
       "Support: initial help and usage recommendations."
     ],
     "faq": [
-      { "q": "Do you sell shared accounts?", "a": "No. We provide assistance and setup services. We do not sell or transfer shared accounts." },
-      { "q": "Do you ask for my password?", "a": "We never ask for your password. If temporary access is needed for remote support we ask explicit consent and use secure options." },
-      { "q": "Who owns the account?", "a": "The account will be under your name or email; you remain the owner at all times." },
-      { "q": "Can prices change?", "a": "Prices are approximate and may change due to platform updates. We confirm final price before processing." }
+      {
+        "q": "Do you sell shared accounts?",
+        "a": "No. We provide assistance and setup services. We do not sell or transfer shared accounts."
+      },
+      {
+        "q": "Do you ask for my password?",
+        "a": "We never ask for your password. If temporary access is needed for remote support we ask explicit consent and use secure options."
+      },
+      {
+        "q": "Who owns the account?",
+        "a": "The account will be under your name or email; you remain the owner at all times."
+      },
+      {
+        "q": "Can prices change?",
+        "a": "Prices are approximate and may change due to platform updates. We confirm final price before processing."
+      }
     ]
   },
   "product": {
@@ -160,12 +260,66 @@
     "storyTitle": "Our story",
     "storyText": "We are the IT friend, now professionalized: practical solutions and easy explanations. Our operation is designed to be run by a small, trusted team via WhatsApp.",
     "trustTitle": "Trust",
-    "badges": ["We protect your data", "Secure payments (via WhatsApp)", "Local support (Colombia)"]
+    "badges": [
+      "We protect your data",
+      "Secure payments (via WhatsApp)",
+      "Local support (Colombia)"
+    ]
   },
   "policies": {
     "title": "Policies",
     "terms": "Terms & conditions",
     "privacy": "Privacy policy",
     "refunds": "Refund policy"
+  },
+  "products": {
+    "chatgpt-configuracion": {
+      "name": "Assistance: ChatGPT (setup)",
+      "shortDescription": "Help subscribing and configuring ChatGPT under your account."
+    },
+    "gemini-configuracion": {
+      "name": "Assistance: Gemini (setup)",
+      "shortDescription": "Subscription and initial configuration of Gemini for your account."
+    },
+    "notion-ai-configuracion": {
+      "name": "Assistance: Notion AI (setup)",
+      "shortDescription": "Integration and setup of Notion AI in your workspace."
+    },
+    "grammarly-configuracion": {
+      "name": "Assistance: Grammarly (setup)",
+      "shortDescription": "Subscription and adjustments for better writing with Grammarly."
+    },
+    "netflix-registro": {
+      "name": "Assistance: Netflix (signup & setup)",
+      "shortDescription": "Help creating an account and configuring profiles and parental controls."
+    },
+    "disneyplus-registro": {
+      "name": "Assistance: Disney+ (signup)",
+      "shortDescription": "Account creation and setup for Disney+."
+    },
+    "max-registro": {
+      "name": "Assistance: Max (signup)",
+      "shortDescription": "Create and configure Max with your preferences."
+    },
+    "spotify-configuracion": {
+      "name": "Assistance: Spotify (setup)",
+      "shortDescription": "Account setup, playlists and device connections for Spotify."
+    },
+    "optimizacion-cv": {
+      "name": "CV Optimization (PDF)",
+      "shortDescription": "Professional review and optimization of your CV in PDF format."
+    },
+    "pack-prompts-pdf": {
+      "name": "Prompt Pack (PDF)",
+      "shortDescription": "Collection of useful prompts for AI (downloadable PDF)."
+    },
+    "notion-template-organizacion": {
+      "name": "Notion Template (organization)",
+      "shortDescription": "Customizable Notion template for personal and project management."
+    },
+    "capacitacion-1h": {
+      "name": "Training: 1 hour (online session)",
+      "shortDescription": "One-hour session for training or personalized consultancy."
+    }
   }
 }

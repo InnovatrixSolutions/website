@@ -4,8 +4,10 @@ import FAQ from "../../components/FAQ";
 import catalog from "@/data/catalog";
 import { getDictionary } from "../../i18n/getDictionary";
 
-export default async function CatalogoPage({ params }: { params: { locale: string } }) {
-  const locale = params.locale === "es" ? "es" : "en";
+export default async function CatalogoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const { locale: rawLocale } = resolvedParams;
+  const locale = rawLocale === "es" ? "es" : "en";
   const t = await getDictionary(locale as "en" | "es");
 
   return (
@@ -16,7 +18,7 @@ export default async function CatalogoPage({ params }: { params: { locale: strin
       </header>
 
       <section aria-labelledby="catalogo" className="mb-10">
-        <CategoryFilter products={catalog} />
+        <CategoryFilter products={catalog} t={t} />
       </section>
 
       <section className="mt-12">
