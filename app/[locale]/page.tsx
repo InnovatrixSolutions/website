@@ -368,7 +368,7 @@ export default async function Home({
                       href={wa}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#42A5F6] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
                     >
                       {t.services.cta}
                     </a>

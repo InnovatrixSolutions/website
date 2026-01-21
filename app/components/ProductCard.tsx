@@ -29,7 +29,7 @@ export default function ProductCard({ product, t }: { product: any; t?: any }) {
         </div>
 
         <a
-          className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-3 py-2 text-sm font-medium text-black"
+          className="inline-flex items-center gap-2 rounded-full bg-[#42A5F6] px-3 py-2 text-sm font-medium text-white"
           href={wa}
           target="_blank"
           rel="noopener noreferrer"

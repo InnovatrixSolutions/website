@@ -60,7 +60,7 @@ export default async function ProductPage({ params }: { params: { locale: string
               href={wa}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-medium text-black"
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#42A5F6] px-4 py-3 text-sm font-medium text-white"
             >
               Solicitar por WhatsApp
             </a>
