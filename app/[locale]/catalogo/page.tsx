@@ -1,7 +1,6 @@
 import React from "react";
 import CategoryFilter from "../../components/CategoryFilter";
 import FAQ from "../../components/FAQ";
-import catalog from "@/data/catalog";
 import { getDictionary } from "../../i18n/getDictionary";
 
 export default async function CatalogoPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -9,6 +8,10 @@ export default async function CatalogoPage({ params }: { params: Promise<{ local
   const { locale: rawLocale } = resolvedParams;
   const locale = rawLocale === "es" ? "es" : "en";
   const t = await getDictionary(locale as "en" | "es");
+
+  // Derive products from dictionary
+  // We explicitly cast to any because we know the structure but TS doesn't
+  const products = Object.values(t.products || {}) as any[];
 
   return (
     <div className="mx-auto w-full max-w-6xl px-6 py-12">
@@ -18,7 +21,7 @@ export default async function CatalogoPage({ params }: { params: Promise<{ local
       </header>
 
       <section aria-labelledby="catalogo" className="mb-10">
-        <CategoryFilter products={catalog} t={t} />
+        <CategoryFilter products={products} t={t} />
       </section>
 
       <section className="mt-12">

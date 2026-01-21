@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import WhatsAppFab from "../components/WhatsAppFab";
 import Header from "../components/Header";
+import NeuralBackground from "../components/NeuralBackground";
 
 export const metadata: Metadata = {
   title: "Innovatrix — AI, Automation & Software Engineering",
@@ -19,20 +20,23 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale: raw } = await params;
-
   const locale = (allowed as readonly string[]).includes(raw) ? raw : "en";
+  const t = await import(`../i18n/${locale}.json`);
 
   return (
     <html lang={locale}>
       <body className="antialiased">
-        <div className="min-h-screen bg-black text-white">
-          <main className="mx-auto w-full max-w-6xl px-6 pt-20">
+        <div className="min-h-screen bg-black text-white relative">
+          <div className="fixed inset-0 z-0">
+            <NeuralBackground />
+          </div>
+          <main className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-20">
             <Header locale={locale} />
             {children}
           </main>
         </div>
         {/* Sticky WhatsApp button visible on all pages */}
-        <WhatsAppFab />
+        <WhatsAppFab ctaText={t.fab?.cta} defaultMessage={t.fab?.message} />
       </body>
     </html>
   );

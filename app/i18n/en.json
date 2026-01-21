@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Service Catalog",
+    "catalog": "Product Catalog",
     "capabilities": "Capabilities",
     "process": "Process",
     "contact": "Contact",
@@ -8,11 +9,9 @@
   },
   "hero": {
     "badge": "Building systems that scale",
-    "titleA": "We build",
-    "titleB": "AI",
-    "titleC": "and",
-    "titleD": "automation",
-    "titleE": "that make your business move.",
+    "titleA": "We engineer ",
+    "titleB": "AI & Intelligent Systems",
+    "titleC": " that scale.",
     "subtitle": "Innovatrix delivers practical solutions: workflow automation, AI assistants, and modern software platforms — with engineering quality from day one.",
     "whoTitle": "For:",
     "whoText": "teams and businesses that need reliable tech, fast execution, and measurable impact.",
@@ -100,9 +99,21 @@
           "Security-by-design checklist",
           "Implementation roadmap"
         ]
+      },
+      {
+        "title": "Airbnb & Short-term Rental Consulting",
+        "desc": "Turn your property into a digital product: platform management, guest automation, and revenue optimization."
+      },
+      {
+        "title": "Business Starter Kit",
+        "desc": "Formalization (registration), accounting software, social media setup, and a sales-ready website."
+      },
+      {
+        "title": "Digital Brand Identity",
+        "desc": "Logo design, brand guidelines, and visual strategy to stand out in digital channels."
       }
     ],
-    "cta": "Consult"
+    "cta": "Request via WhatsApp"
   },
   "capabilities": {
     "title": "Capabilities",
@@ -216,6 +227,10 @@
     "github": "GitHub",
     "privacy": "Privacy"
   },
+  "fab": {
+    "cta": "Chat via WhatsApp",
+    "message": "Hello, I would like information about your services and catalog."
+  },
   "catalog": {
     "title": "Product Catalog",
     "subtitle": "Secure, professional assistance for subscriptions, setup and digital products.",
@@ -275,51 +290,183 @@
   "products": {
     "chatgpt-configuracion": {
       "name": "Assistance: ChatGPT (setup)",
-      "shortDescription": "Help subscribing and configuring ChatGPT under your account."
+      "shortDescription": "Help subscribing and configuring ChatGPT under your account.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 25000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Account creation/validation",
+        "Plan selection",
+        "Usage guide & prompts"
+      ],
+      "recommended": true,
+      "slug": "chatgpt-configuracion"
     },
     "gemini-configuracion": {
       "name": "Assistance: Gemini (setup)",
-      "shortDescription": "Subscription and initial configuration of Gemini for your account."
+      "shortDescription": "Subscription and initial configuration of Gemini for your account.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 22000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Registration & verification",
+        "Initial settings",
+        "Prompts pack"
+      ],
+      "recommended": false,
+      "slug": "gemini-configuracion"
     },
     "notion-ai-configuracion": {
       "name": "Assistance: Notion AI (setup)",
-      "shortDescription": "Integration and setup of Notion AI in your workspace."
+      "shortDescription": "Integration and setup of Notion AI in your workspace.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 20000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Activation",
+        "Basic templates",
+        "Short training"
+      ],
+      "recommended": false,
+      "slug": "notion-ai-configuracion"
     },
     "grammarly-configuracion": {
       "name": "Assistance: Grammarly (setup)",
-      "shortDescription": "Subscription and adjustments for better writing with Grammarly."
+      "shortDescription": "Subscription and adjustments for better writing with Grammarly.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 15000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Profile setup",
+        "Browser extension",
+        "Usage tips"
+      ],
+      "recommended": false,
+      "slug": "grammarly-configuracion"
     },
     "netflix-registro": {
       "name": "Assistance: Netflix (signup & setup)",
-      "shortDescription": "Help creating an account and configuring profiles and parental controls."
+      "shortDescription": "Help creating an account and configuring profiles and parental controls.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 18000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Account creation",
+        "Profiles & parental control",
+        "Initial recommendations"
+      ],
+      "recommended": false,
+      "slug": "netflix-registro"
     },
     "disneyplus-registro": {
       "name": "Assistance: Disney+ (signup)",
-      "shortDescription": "Account creation and setup for Disney+."
+      "shortDescription": "Account creation and setup for Disney+.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 18000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Registration",
+        "Plan activation",
+        "Profile setup"
+      ],
+      "recommended": false,
+      "slug": "disneyplus-registro"
     },
     "max-registro": {
       "name": "Assistance: Max (signup)",
-      "shortDescription": "Create and configure Max with your preferences."
+      "shortDescription": "Create and configure Max with your preferences.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 16000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Account creation",
+        "Playback settings",
+        "Content tips"
+      ],
+      "recommended": false,
+      "slug": "max-registro"
     },
     "spotify-configuracion": {
       "name": "Assistance: Spotify (setup)",
-      "shortDescription": "Account setup, playlists and device connections for Spotify."
+      "shortDescription": "Account setup, playlists and device connections for Spotify.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 12000,
+      "deliveryTime": "30-120 minutes",
+      "includes": [
+        "Creation & verification",
+        "Initial playlists",
+        "Device connection"
+      ],
+      "recommended": false,
+      "slug": "spotify-configuracion"
     },
     "optimizacion-cv": {
       "name": "CV Optimization (PDF)",
-      "shortDescription": "Professional review and optimization of your CV in PDF format."
+      "shortDescription": "Professional review and optimization of your CV in PDF format.",
+      "category": "productos",
+      "subcategory": "Template / Service",
+      "priceCOP": 40000,
+      "deliveryTime": "24-72 hours",
+      "includes": [
+        "Full review",
+        "Final PDF",
+        "LinkedIn suggestions"
+      ],
+      "recommended": true,
+      "slug": "optimizacion-cv"
     },
     "pack-prompts-pdf": {
-      "name": "Prompt Pack (PDF)",
-      "shortDescription": "Collection of useful prompts for AI (downloadable PDF)."
+      "name": "Prompts Pack (PDF)",
+      "shortDescription": "Collection of useful AI prompts (downloadable PDF).",
+      "category": "productos",
+      "subcategory": "PDF",
+      "priceCOP": 20000,
+      "deliveryTime": "Immediate (download)",
+      "includes": [
+        "Downloadable PDF",
+        "Usage guide",
+        "Prompt categories"
+      ],
+      "recommended": true,
+      "slug": "pack-prompts-pdf"
     },
     "notion-template-organizacion": {
       "name": "Notion Template (organization)",
-      "shortDescription": "Customizable Notion template for personal and project management."
+      "shortDescription": "Customizable Notion template for personal and project management.",
+      "category": "productos",
+      "subcategory": "Template",
+      "priceCOP": 30000,
+      "deliveryTime": "24 hours",
+      "includes": [
+        "Shareable template",
+        "Installation guide",
+        "Short support"
+      ],
+      "recommended": false,
+      "slug": "notion-template-organizacion"
     },
     "capacitacion-1h": {
       "name": "Training: 1 hour (online session)",
-      "shortDescription": "One-hour session for training or personalized consultancy."
+      "shortDescription": "One-hour session for training or personalized consultancy.",
+      "category": "productos",
+      "subcategory": "Service",
+      "priceCOP": 60000,
+      "deliveryTime": "To operate (24-72h)",
+      "includes": [
+        "1 hour on Zoom/Meet",
+        "Recording (optional)",
+        "Next steps summary"
+      ],
+      "recommended": false,
+      "slug": "capacitacion-1h"
     }
   }
 }

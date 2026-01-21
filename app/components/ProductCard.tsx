@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import type { Product } from "@/data/catalog";
 import { generateWhatsAppLink, formatCOP } from "@/lib/generateWhatsAppLink";
 
-export default function ProductCard({ product, t }: { product: Product; t?: any }) {
+export default function ProductCard({ product, t }: { product: any; t?: any }) {
   const wa = generateWhatsAppLink({
     name: product.name,
     priceCOP: product.priceCOP,

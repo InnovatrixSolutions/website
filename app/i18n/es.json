@@ -1,6 +1,7 @@
 {
   "nav": {
     "services": "Catálogo de Servicios",
+    "catalog": "Catálogo de Productos",
     "capabilities": "Capacidades",
     "process": "Proceso",
     "contact": "Contacto",
@@ -8,11 +9,9 @@
   },
   "hero": {
     "badge": "Construimos sistemas que escalan",
-    "titleA": "Creamos",
-    "titleB": "IA",
-    "titleC": "y",
-    "titleD": "automatización",
-    "titleE": "para que tu negocio avance.",
+    "titleA": "Ingeniería de ",
+    "titleB": "IA y Sistemas Inteligentes",
+    "titleC": " para tu negocio.",
     "subtitle": "Innovatrix entrega soluciones prácticas: automatización de procesos, asistentes con IA y plataformas modernas — con calidad de ingeniería desde el primer día.",
     "whoTitle": "Para:",
     "whoText": "equipos y empresas que necesitan tecnología confiable, ejecución rápida e impacto medible.",
@@ -100,9 +99,21 @@
           "Checklist seguridad por diseño",
           "Roadmap de implementación"
         ]
+      },
+      {
+        "title": "Asesoría Airbnb y Rentas Cortas",
+        "desc": "Transforma tu propiedad en un producto digital: gestión de plataformas, automatización de huéspedes y optimización de ingresos."
+      },
+      {
+        "title": "Kit de Inicio Empresarial",
+        "desc": "Formalización (Cámara de Comercio), software contable, configuración de redes sociales y sitio web listo para vender."
+      },
+      {
+        "title": "Identidad de Marca Digital",
+        "desc": "Diseño de logotipos, manual de marca y estrategia visual para destacar en canales digitales."
       }
     ],
-    "cta": "Consultar"
+    "cta": "Solicitar por WhatsApp"
   },
   "capabilities": {
     "title": "Capacidades",
@@ -216,6 +227,10 @@
     "github": "GitHub",
     "privacy": "Privacidad"
   },
+  "fab": {
+    "cta": "Chatea por WhatsApp",
+    "message": "Hola, quisiera información sobre sus servicios y catálogo."
+  },
   "catalog": {
     "title": "Catálogo de Productos",
     "subtitle": "Asistencia segura y profesional para suscripciones, configuraciones y productos digitales.",
@@ -275,51 +290,183 @@
   "products": {
     "chatgpt-configuracion": {
       "name": "Asistencia: ChatGPT (configuración)",
-      "shortDescription": "Ayuda para suscribirte y configurar ChatGPT bajo tu cuenta."
+      "shortDescription": "Ayuda para suscribirte y configurar ChatGPT bajo tu cuenta.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 25000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Creación/validación de cuenta",
+        "Selección de plan",
+        "Guía de uso y prompts"
+      ],
+      "recommended": true,
+      "slug": "chatgpt-configuracion"
     },
     "gemini-configuracion": {
       "name": "Asistencia: Gemini (configuración)",
-      "shortDescription": "Suscripción y puesta a punto de Gemini bajo tu cuenta."
+      "shortDescription": "Suscripción y puesta a punto de Gemini bajo tu cuenta.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 22000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Registro y verificación",
+        "Ajustes iniciales",
+        "Paquete de prompts"
+      ],
+      "recommended": false,
+      "slug": "gemini-configuracion"
     },
     "notion-ai-configuracion": {
       "name": "Asistencia: Notion AI (configuración)",
-      "shortDescription": "Integración y configuración de Notion AI en tu workspace."
+      "shortDescription": "Integración y configuración de Notion AI en tu workspace.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 20000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Activación",
+        "Plantillas básicas",
+        "Entrenamiento corto"
+      ],
+      "recommended": false,
+      "slug": "notion-ai-configuracion"
     },
     "grammarly-configuracion": {
       "name": "Asistencia: Grammarly (configuración)",
-      "shortDescription": "Suscripción y ajustes de Grammarly para mejor escritura."
+      "shortDescription": "Suscripción y ajustes de Grammarly para mejor escritura.",
+      "category": "asistencia",
+      "subcategory": "IA",
+      "priceCOP": 15000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Configuración de perfil",
+        "Extensión navegador",
+        "Consejos de uso"
+      ],
+      "recommended": false,
+      "slug": "grammarly-configuracion"
     },
     "netflix-registro": {
       "name": "Asistencia: Netflix (registro y configuración)",
-      "shortDescription": "Ayuda para crear cuenta y configurar perfiles y controles parentales."
+      "shortDescription": "Ayuda para crear cuenta y configurar perfiles y controles parentales.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 18000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Creación de cuenta",
+        "Perfiles y control parental",
+        "Recomendaciones iniciales"
+      ],
+      "recommended": false,
+      "slug": "netflix-registro"
     },
     "disneyplus-registro": {
       "name": "Asistencia: Disney+ (registro)",
-      "shortDescription": "Registro y configuración de Disney+ bajo tu correo."
+      "shortDescription": "Registro y configuración de Disney+ bajo tu correo.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 18000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Registro",
+        "Activación de plan",
+        "Configuración de perfiles"
+      ],
+      "recommended": false,
+      "slug": "disneyplus-registro"
     },
     "max-registro": {
       "name": "Asistencia: Max (registro)",
-      "shortDescription": "Creación y configuración de Max con tus preferencias."
+      "shortDescription": "Creación y configuración de Max con tus preferencias.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 16000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Creación de cuenta",
+        "Ajustes de reproducción",
+        "Consejos de contenido"
+      ],
+      "recommended": false,
+      "slug": "max-registro"
     },
     "spotify-configuracion": {
       "name": "Asistencia: Spotify (configuración)",
-      "shortDescription": "Configuración de Spotify, playlists y dispositivos."
+      "shortDescription": "Configuración de Spotify, playlists y dispositivos.",
+      "category": "streaming",
+      "subcategory": "Streaming",
+      "priceCOP": 12000,
+      "deliveryTime": "30-120 minutos",
+      "includes": [
+        "Creación y verificación",
+        "Playlists iniciales",
+        "Conexión a dispositivos"
+      ],
+      "recommended": false,
+      "slug": "spotify-configuracion"
     },
     "optimizacion-cv": {
       "name": "Optimización de CV (PDF)",
-      "shortDescription": "Revisión y optimización profesional de tu CV en PDF."
+      "shortDescription": "Revisión y optimización profesional de tu CV en PDF.",
+      "category": "productos",
+      "subcategory": "Plantilla / Servicio",
+      "priceCOP": 40000,
+      "deliveryTime": "24-72 horas",
+      "includes": [
+        "Revisión completa",
+        "PDF final listo",
+        "Sugerencias de LinkedIn"
+      ],
+      "recommended": true,
+      "slug": "optimizacion-cv"
     },
     "pack-prompts-pdf": {
       "name": "Pack de prompts (PDF)",
-      "shortDescription": "Colección de prompts útiles para IA (PDF descargable)."
+      "shortDescription": "Colección de prompts útiles para IA (PDF descargable).",
+      "category": "productos",
+      "subcategory": "PDF",
+      "priceCOP": 20000,
+      "deliveryTime": "Inmediato (descarga)",
+      "includes": [
+        "PDF descargable",
+        "Guía de uso",
+        "Categorías de prompts"
+      ],
+      "recommended": true,
+      "slug": "pack-prompts-pdf"
     },
     "notion-template-organizacion": {
       "name": "Plantilla Notion (organización)",
-      "shortDescription": "Plantilla Notion para gestión personal y proyectos."
+      "shortDescription": "Plantilla Notion para gestión personal y proyectos.",
+      "category": "productos",
+      "subcategory": "Plantilla",
+      "priceCOP": 30000,
+      "deliveryTime": "24 horas",
+      "includes": [
+        "Plantilla compartible",
+        "Guía de instalación",
+        "Soporte corto"
+      ],
+      "recommended": false,
+      "slug": "notion-template-organizacion"
     },
     "capacitacion-1h": {
       "name": "Capacitación: 1 hora (sesión en línea)",
-      "shortDescription": "Sesión de 1 hora para entrenamiento o asesoría personalizada."
+      "shortDescription": "Sesión de 1 hora para entrenamiento o asesoría personalizada.",
+      "category": "productos",
+      "subcategory": "Servicio",
+      "priceCOP": 60000,
+      "deliveryTime": "A coordinar (24-72h)",
+      "includes": [
+        "1 hora en Zoom/Meet",
+        "Grabación (opcional)",
+        "Resumen con pasos siguientes"
+      ],
+      "recommended": false,
+      "slug": "capacitacion-1h"
     }
   }
 }

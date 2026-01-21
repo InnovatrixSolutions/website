@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import type { Product } from "@/data/catalog";
 import ProductCard from "./ProductCard";
 
-export default function CategoryFilter({ products, t }: { products: Product[]; t: any }) {
+export default function CategoryFilter({ products, t }: { products: any[]; t: any }) {
   const [active, setActive] = useState<string>("all");
 
   const categories = (
@@ -45,7 +44,7 @@ export default function CategoryFilter({ products, t }: { products: Product[]; t
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((p) => (
-          <ProductCard key={p.id} product={p} t={t} />
+          <ProductCard key={p.slug} product={p} t={t} />
         ))}
       </div>
     </div>

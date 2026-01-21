@@ -1,5 +1,8 @@
 import BrandLogo from "../components/BrandLogo";
 import ContactForm from "../components/ContactForm";
+import Link from "next/link";
+
+import { getDictionary } from "../i18n/getDictionary";
 
 type Locale = "en" | "es";
 
@@ -71,6 +74,9 @@ const copy: Record<
         { title: "Headless CMS & Content", desc: "Content APIs, previews, and workflows for marketing and editorial teams." },
         { title: "Real-time Systems", desc: "WebSockets, push updates, notifications, and collaborative features." },
         { title: "SaaS Product Engineering", desc: "Productization, subscription billing, multi-tenant design, and onboarding flows." },
+        { title: "Airbnb & Short-term Rental Consulting", desc: "Turn your property into a digital product: platform management, guest automation, and revenue optimization." },
+        { title: "Business Starter Kit", desc: "Formalization (registration), accounting software, social media setup, and a sales-ready website." },
+        { title: "Digital Brand Identity", desc: "Logo design, brand guidelines, and visual strategy to stand out in digital channels." },
       ],
     },
     why: {
@@ -144,6 +150,9 @@ const copy: Record<
         { title: "Headless CMS y contenido", desc: "APIs de contenido, previews y workflows para marketing y editorial." },
         { title: "Sistemas en tiempo real", desc: "WebSockets, pushes, notificaciones y features colaborativas." },
         { title: "Ingeniería de productos SaaS", desc: "Productización, billing por suscripción, multi-tenant y onboarding." },
+        { title: "Asesoría Airbnb y Rentas Cortas", desc: "Transforma tu propiedad en un producto digital: gestión de plataformas, automatización de huéspedes y optimización de ingresos." },
+        { title: "Kit de Inicio Empresarial", desc: "Formalización (Cámara de Comercio), software contable, configuración de redes sociales y sitio web listo para vender." },
+        { title: "Identidad de Marca Digital", desc: "Diseño de logotipos, manual de marca y estrategia visual para destacar en canales digitales." },
       ],
     },
     why: {
@@ -194,11 +203,10 @@ export default async function Home({
 }) {
   const { locale: rawLocale } = await params;
   const locale: Locale = rawLocale === "es" ? "es" : "en";
-  const t = copy[locale];
+  const t = await getDictionary(locale);
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* AI animated background */}
+    <div className="min-h-screen">
       <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
         {/* orb 1 */}
         {/* <div
@@ -246,7 +254,7 @@ export default async function Home({
               {t.nav.catalog}
             </a>
             <a className="hover:text-white" href={`/${locale}#why`}>
-              {t.nav.why}
+              {t.nav.capabilities}
             </a>
             <a className="hover:text-white" href={`/${locale}/sobre-nosotros`}>
               Sobre nosotros
@@ -291,7 +299,7 @@ export default async function Home({
 
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80">
             <span className="h-2 w-2 rounded-full bg-[#42A5F6]" />
-            {t.hero.pill}
+            {t.hero.badge}
           </div>
 
           <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
@@ -340,7 +348,7 @@ export default async function Home({
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {t.services.items.map((s) => {
+            {t.services.items.map((s: any) => {
               const wa = `https://wa.me/573124305560?text=${encodeURIComponent(
                 locale === "es"
                   ? `Hola, me interesa el servicio de: ${s.title}`
@@ -360,9 +368,9 @@ export default async function Home({
                       href={wa}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-[#42A5F6] hover:text-[#7B61FF]"
+                      className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-black transition hover:opacity-90"
                     >
-                      {t.services.cta} →
+                      {t.services.cta}
                     </a>
                   </div>
                 </div>
@@ -373,10 +381,10 @@ export default async function Home({
 
         {/* WHY */}
         <section id="why" className="scroll-mt-24 py-16">
-          <h2 className="text-2xl font-semibold md:text-3xl">{t.why.title}</h2>
+          <h2 className="text-2xl font-semibold md:text-3xl">{t.capabilities.title}</h2>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {t.why.points.map((p) => (
+            {t.capabilities.points.map((p: any) => (
               <div
                 key={p.title}
                 className="rounded-2xl border border-white/10 bg-white/5 p-6"
@@ -413,14 +421,14 @@ export default async function Home({
             </p>
 
             <ContactForm
-              emailLabel={t.contact.emailLabel}
+              emailLabel={locale === "es" ? "Correo" : "Email"}
               messageLabel={locale === "es" ? "Mensaje" : "Message"}
               messagePlaceholder={
                 locale === "es"
                   ? "¿Qué quieres automatizar o construir?"
                   : "What do you want to build or automate?"
               }
-              buttonLabel={t.contact.button}
+              buttonLabel={t.contact.ctaEmail}
             />
           </div>
         </section>

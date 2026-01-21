@@ -1,5 +1,4 @@
 import React from "react";
-import catalog from "@/data/catalog";
 import { generateWhatsAppLink, formatCOP } from "@/lib/generateWhatsAppLink";
 import ProductCard from "../../components/ProductCard";
 import { getDictionary } from "../../i18n/getDictionary";
@@ -9,7 +8,11 @@ export default async function ProductPage({ params }: { params: { locale: string
   const t = await getDictionary(locale as "en" | "es");
 
   const { slug } = params;
-  const product = catalog.find((p) => p.slug === slug);
+
+  // Products are stored in t.products as an object { slug: Product } or similar.
+  // We can convert to array to find or access directly if key == slug.
+  const products = Object.values(t.products || {}) as any[];
+  const product = products.find((p) => p.slug === slug);
 
   if (!product) {
     return (
@@ -22,7 +25,7 @@ export default async function ProductPage({ params }: { params: { locale: string
 
   const wa = generateWhatsAppLink({ name: product.name, priceCOP: product.priceCOP, slug: product.slug });
 
-  const related = catalog.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 3);
+  const related = products.filter((p) => p.category === product.category && p.slug !== product.slug).slice(0, 3);
 
   return (
     <div className="mx-auto w-full max-w-5xl px-6 py-12">
@@ -33,7 +36,7 @@ export default async function ProductPage({ params }: { params: { locale: string
 
           <h3 className="mt-6 text-lg font-semibold">{t.product.includesTitle}</h3>
           <ul className="mt-2 list-inside list-disc text-sm text-white/70">
-            {product.includes.map((it) => (
+            {product.includes && product.includes.map((it: string) => (
               <li key={it}>{it}</li>
             ))}
           </ul>
@@ -68,7 +71,7 @@ export default async function ProductPage({ params }: { params: { locale: string
               <h4 className="text-base font-semibold">También te puede interesar</h4>
               <div className="mt-3 grid gap-3">
                 {related.map((r) => (
-                  <ProductCard key={r.id} product={r} />
+                  <ProductCard key={r.slug} product={r} t={t} />
                 ))}
               </div>
             </div>
