@@ -4,7 +4,7 @@ import React from "react";
 import { generateWhatsAppLink } from "@/lib/generateWhatsAppLink";
 
 export default function WhatsAppFab({ ctaText, defaultMessage }: { ctaText?: string; defaultMessage?: string }) {
-  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP ?? "+57300XXXXXXX";
+  const waNumber = process.env.NEXT_PUBLIC_WHATSAPP ?? "+573166402868";
   const phone = waNumber.replace(/[^0-9+]/g, "");
 
   // Use passed message or fallback (though fallback shouldn't be needed if parent passes it)

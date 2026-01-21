@@ -15,7 +15,7 @@ export function generateWhatsAppLink({
   priceCOP: number;
   slug?: string;
 }) {
-  const raw = process.env.NEXT_PUBLIC_WHATSAPP ?? "+57300XXXXXXX"; // placeholder
+  const raw = process.env.NEXT_PUBLIC_WHATSAPP ?? "+573166402868"; // fallback
   const phone = raw.replace(/[^0-9+]/g, "");
   const price = formatCOP(priceCOP);
 

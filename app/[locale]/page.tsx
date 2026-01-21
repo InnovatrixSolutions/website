@@ -349,7 +349,9 @@ export default async function Home({
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {t.services.items.map((s: any) => {
-              const wa = `https://wa.me/573124305560?text=${encodeURIComponent(
+              const waNumber = process.env.NEXT_PUBLIC_WHATSAPP ?? "573166402868";
+              const cleanPhone = waNumber.replace(/[^0-9]/g, "");
+              const wa = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(
                 locale === "es"
                   ? `Hola, me interesa el servicio de: ${s.title}`
                   : `Hello, I'm interested in the service: ${s.title}`
@@ -473,7 +475,7 @@ export default async function Home({
 
               {/* WhatsApp / Phone */}
               <a
-                href="https://wa.me/+573124305560"
+                href="https://wa.me/573166402868"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-white/60 transition hover:text-white"
@@ -502,7 +504,7 @@ export default async function Home({
                    A2 2 0 0 1 22 16.92z"
                   />
                 </svg>
-                <span>+57 (312) 430 5560</span>
+                <span>+57 (316) 640 2868</span>
               </a>
 
             </div>
