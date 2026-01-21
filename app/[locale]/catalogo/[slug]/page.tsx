@@ -1,7 +1,7 @@
 import React from "react";
 import { generateWhatsAppLink, formatCOP } from "@/lib/generateWhatsAppLink";
-import ProductCard from "../../components/ProductCard";
-import { getDictionary } from "../../i18n/getDictionary";
+import ProductCard from "@/app/components/ProductCard";
+import { getDictionary } from "@/app/i18n/getDictionary";
 
 export default async function ProductPage({ params }: { params: { locale: string; slug: string } }) {
   const locale = params.locale === "es" ? "es" : "en";
